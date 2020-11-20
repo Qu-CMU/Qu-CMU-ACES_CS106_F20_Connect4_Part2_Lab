@@ -96,7 +96,8 @@ class Connect_4_AI():
                 if flag == True:
                     if self.check_game_over(state2)[0]:
                         moves.remove(i)
-                    
+                        continue
+
                 loss = list()
                 for k in range(7):
                     flag, state3 = self.place(state2, player, k)
